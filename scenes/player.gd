@@ -16,3 +16,7 @@ func _process(_delta):
 	else:
 		$AnimatedSprite.flip_h = false
 		
+
+
+func _on_RigidBody2D_body_entered(body):
+	pass # Replace with function body.
