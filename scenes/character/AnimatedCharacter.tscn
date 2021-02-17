@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/character/AnimatedCharacterMovementController.gd" type="Script" id=1]
+[ext_resource path="res://scenes/character/AnimatedCharacterSpriteController.gd" type="Script" id=2]
+[ext_resource path="res://scenes/character/AnimatedCharacter.gd" type="Script" id=3]
+
+[node name="AnimatedSprite" type="AnimatedSprite"]
+script = ExtResource( 3 )
+
+[node name="AnimatedSpriteController" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="AnimatedCharacterMovementController" type="Node" parent="."]
+script = ExtResource( 1 )
